@@ -1,0 +1,84 @@
+{
+  "source": "/Users/laxman/Documents/Manual Library/GitHub/saas-group-assignment/faq_assistant/data/classified_faq_v1.json",
+  "model": "gpt-4.1-mini",
+  "temperature": 0.2,
+  "items": [
+    {
+      "question": "How can I download the mobile application?",
+      "answer": "Visit the App Store (iOS) or Google Play Store (Android), search for our app by name, and download it for free.",
+      "intent": "unknown",
+      "quality_score": 0.9
+    },
+    {
+      "question": "How do I report a bug or technical issue?",
+      "answer": "Use the 'Report a Problem' option in the Help Center or email our support team at support@example.com.",
+      "intent": "unknown",
+      "quality_score": 0.9
+    },
+    {
+      "question": "How do I contact customer support?",
+      "answer": "You can reach our team via the 'Help Center' chat or by emailing support@example.com.",
+      "intent": "unknown",
+      "quality_score": 0.9
+    },
+    {
+      "question": "Where can I find the terms of service?",
+      "answer": "Scroll to the bottom of our website and click on 'Terms of Service'.",
+      "intent": "unknown",
+      "quality_score": 0.9
+    },
+    {
+      "question": "Do you support integration with Google Drive?",
+      "answer": "Yes, go to 'Integrations' in settings and connect your Google account to enable Drive sync.",
+      "intent": "unknown",
+      "quality_score": 0.9
+    },
+    {
+      "question": "What browsers are supported?",
+      "answer": "We officially support the latest versions of Chrome, Firefox, Safari, and Edge.",
+      "intent": "unknown",
+      "quality_score": 0.9
+    }
+  ],
+  "clusters": {
+    "categories": [
+      {
+        "name": "Mobile Application",
+        "description": "Questions related to the availability and download of the mobile app.",
+        "faqs": [
+          "How can I download the mobile application?"
+        ]
+      },
+      {
+        "name": "Technical Support and Bug Reporting",
+        "description": "Guidance on reporting technical issues and contacting customer support.",
+        "faqs": [
+          "How do I report a bug or technical issue?",
+          "How do I contact customer support?"
+        ]
+      },
+      {
+        "name": "Legal and Policies",
+        "description": "Information about terms of service and related legal documents.",
+        "faqs": [
+          "Where can I find the terms of service?"
+        ]
+      },
+      {
+        "name": "Integrations",
+        "description": "Questions about third-party service integrations supported by the product.",
+        "faqs": [
+          "Do you support integration with Google Drive?"
+        ]
+      },
+      {
+        "name": "Supported Platforms",
+        "description": "Information about supported browsers and platforms for using the product.",
+        "faqs": [
+          "What browsers are supported?"
+        ]
+      }
+    ],
+    "off_topic": []
+  }
+}

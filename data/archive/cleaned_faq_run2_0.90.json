@@ -1,0 +1,434 @@
+{
+  "generated_at": "2025-09-30T10:13:45.031819+00:00",
+  "metadata": {
+    "model": "gpt-4.1-mini",
+    "total_raw": 42,
+    "embedding_model": "text-embedding-3-small",
+    "embedding_dimension": 1536,
+    "dedup_similarity_threshold": 0.9,
+    "filtered_count": 32
+  },
+  "items": [
+    {
+      "question": "How can I update my username?",
+      "answer": "Go to your account settings, select 'Manage Username', enter your desired new username, and click 'Save Changes'.",
+      "intent": "account_management",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about updating the username, which is related to account profile updates, fitting the 'account_management' intent. The answer directly addresses the question with clear steps, making the Q/A pair coherent and complete.",
+      "canonical_id": null
+    },
+    {
+      "question": "What's the process for recovering a forgotten username?",
+      "answer": "On the login page, click 'Forgot Username', enter the email associated with your account, and follow the instructions sent to your email.",
+      "intent": "account_management",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about recovering a forgotten username, which is related to account lifecycle tasks such as login credentials recovery. The answer provides a clear and relevant process for recovering the username, matching the question well.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I change my username?",
+      "answer": "You can change your username anytime from 'Account Settings' > 'Manage Username'. Enter a new one and save.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about changing the username, which is related to account management tasks such as profile updates. The answer provides a clear and relevant method to change the username through account settings, which aligns well with the intent. The answer is concise and informative, though it could be slightly more detailed about any restrictions or confirmation steps.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I switch to dark mode in the application?",
+      "answer": "In the application settings, look for 'Display Options'. Toggle the 'Dark Mode' switch to enable or disable it.",
+      "intent": "settings",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about switching to dark mode, which is a user-facing configuration or preference related to UI display. The answer correctly explains how to enable or disable dark mode in the application settings, making the Q/A pair relevant and clear.",
+      "canonical_id": null
+    },
+    {
+      "question": "Is it possible to link multiple email addresses to my account?",
+      "answer": "Yes, in your profile settings, find 'Linked Emails', click 'Add Email', and follow the verification steps for each new email.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question is about linking multiple email addresses to an account, which relates to managing account information. The answer provides clear instructions on how to add linked emails in profile settings, which is relevant and helpful. Therefore, the intent is account_management. The answer is mostly clear and relevant, so the quality score is high.",
+      "canonical_id": null
+    },
+    {
+      "question": "How can I export my user data from the platform?",
+      "answer": "Navigate to 'Privacy and Data' in your account settings, select 'Export Data', choose the data types you want, and click 'Generate Export'.",
+      "intent": "data_privacy",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about exporting user data, which relates to data privacy and compliance. The answer provides clear, relevant instructions on how to export data from the platform, matching the question perfectly.",
+      "canonical_id": null
+    },
+    {
+      "question": "What are the requirements for creating a secure passphrase?",
+      "answer": "We recommend using a passphrase of at least 4 random words, totaling 20 characters or more. Avoid common phrases or quotes.",
+      "intent": "security",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about requirements for creating a secure passphrase, which relates to authentication and safety workflows, fitting the 'security' intent. The answer provides relevant guidance on creating a secure passphrase, so the Q/A pair is coherent and appropriate.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I enable biometric login for the mobile app?",
+      "answer": "Open the mobile app, go to 'Security Settings', and toggle on 'Enable Biometric Login'. Follow the prompts to set it up with your device.",
+      "intent": "security",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about enabling biometric login, which is related to authentication and security. The answer provides clear, relevant steps to enable biometric login in the mobile app, matching the question perfectly. Therefore, the intent is 'security' and the quality of the Q/A pair is high.",
+      "canonical_id": null
+    },
+    {
+      "question": "What steps should I take to permanently delete my account?",
+      "answer": "Go to 'Account Management', select 'Delete Account', read through the implications, enter your password, and confirm deletion. This action cannot be undone.",
+      "intent": "account_management",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about permanently deleting an account, which is an account lifecycle task. The answer provides clear, relevant steps to delete the account, matching the question perfectly.",
+      "canonical_id": null
+    },
+    {
+      "question": "What should I do if I suspect unauthorized access to my account?",
+      "answer": "Immediately log out of all sessions, change your password, and contact our security team through the 'Report Security Concern' form in the Help Center.",
+      "intent": "security",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about actions to take if unauthorized access is suspected, which relates to account security. The answer provides appropriate security-related steps, confirming the intent as 'security'. The Q/A pair is clear, relevant, and complete.",
+      "canonical_id": null
+    },
+    {
+      "question": "How can I manage the frequency of email digests I receive?",
+      "answer": "In your communication preferences, find 'Email Digest Settings', where you can adjust the frequency to daily, weekly, or monthly, or turn them off completely.",
+      "intent": "settings",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about managing the frequency of email digests, which relates to user-facing configuration/preferences. The answer provides clear instructions on how to adjust these settings, making the Q/A pair relevant and complete.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I reset my password?",
+      "answer": "Click 'Forgot Password' on the login page, enter your email, and follow the link sent to reset your password.",
+      "intent": "security",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question is about resetting a password, which falls under security as it relates to authentication and safety workflows. The answer correctly addresses the question with clear and relevant instructions.",
+      "canonical_id": null
+    },
+    {
+      "question": "Where can I see my billing history?",
+      "answer": "In account settings, go to 'Billing' > 'Payment History' to view and download your past invoices.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about viewing billing history, which relates to account lifecycle tasks such as billing and profile updates, fitting the 'account_management' intent. The answer appropriately directs the user to the billing section in account settings, making the Q/A pair relevant and clear.",
+      "canonical_id": null
+    },
+    {
+      "question": "Can I change my subscription plan?",
+      "answer": "Yes, navigate to 'Billing' > 'Manage Subscription' and select the plan you want to upgrade or downgrade to.",
+      "intent": "account_management",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about changing a subscription plan, which is related to account lifecycle tasks such as subscription management. The answer directly addresses how to change the subscription plan, making the Q/A pair relevant and clear.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I update my payment method?",
+      "answer": "Go to 'Billing' > 'Payment Methods' and add or update your credit card or PayPal details.",
+      "intent": "account_management",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about updating the payment method, which is related to billing and profile updates, fitting the 'account_management' intent. The answer directly addresses how to update payment methods, making the Q/A pair relevant and clear.",
+      "canonical_id": null
+    },
+    {
+      "question": "Does the platform support two-factor authentication?",
+      "answer": "Yes, enable 2FA in 'Security Settings' by linking your account to an authenticator app.",
+      "intent": "security",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about two-factor authentication, which is a security feature. The answer directly addresses how to enable 2FA, confirming the platform supports it. The Q/A pair is clear, relevant, and well-matched.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I update my profile picture?",
+      "answer": "Go to your profile settings, click on your current picture, and upload a new image.",
+      "intent": "settings",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about updating a profile picture, which is a user-facing configuration or preference related to profile personalization. The answer provides clear and relevant instructions on how to update the profile picture, matching the question well.",
+      "canonical_id": null
+    },
+    {
+      "question": "Can I recover messages I deleted?",
+      "answer": "Deleted messages cannot be recovered once removed from your account.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question is about recovering deleted messages, which relates to account data management and recovery. The answer directly addresses the question by stating that deleted messages cannot be recovered. This fits best under account_management as it involves recovery of user data associated with the account. The answer is clear and relevant, so the quality score is high.",
+      "canonical_id": null
+    },
+    {
+      "question": "Is my personal data shared with third parties?",
+      "answer": "We do not sell your data. Data may be shared only with trusted providers to deliver our services, as described in our Privacy Policy.",
+      "intent": "data_privacy",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about sharing personal data with third parties, which relates to data privacy. The answer addresses data sharing practices and references the Privacy Policy, which is relevant and appropriate. The Q/A pair is coherent and on-topic for data privacy.",
+      "canonical_id": null
+    },
+    {
+      "question": "Can I use the platform in multiple languages?",
+      "answer": "Yes, go to 'Preferences' > 'Language' to switch to your preferred language.",
+      "intent": "settings",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about using the platform in multiple languages, which relates to user-facing configuration/preferences. The answer provides a clear and relevant instruction on how to change the language setting, matching the question perfectly.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I clear my search history?",
+      "answer": "Go to 'Privacy Settings' and click 'Clear Search History'.",
+      "intent": "settings",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about clearing search history, which is a user-facing configuration related to privacy settings. This fits best under 'settings' as it involves managing user preferences. The answer is relevant and clear, providing a straightforward method to clear search history.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I log out of all devices?",
+      "answer": "In 'Security Settings', click 'Log Out of All Sessions' to force logout from every device.",
+      "intent": "security",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question is about logging out of all devices, which relates to security and session management. The answer provides a clear and relevant instruction on how to perform this action within 'Security Settings'. The Q/A pair is coherent and addresses a security-related concern.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I restore accidentally deleted files?",
+      "answer": "Go to 'Trash' in your account, select the file, and click 'Restore'.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question is about restoring accidentally deleted files, which relates to account management tasks involving file recovery. The answer directly addresses the question with clear instructions on how to restore files from 'Trash'. The Q/A pair is coherent and relevant to account management.",
+      "canonical_id": null
+    },
+    {
+      "question": "Can I disable email notifications?",
+      "answer": "Yes, under 'Notification Settings', toggle off email notifications you no longer want to receive.",
+      "intent": "settings",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question asks about disabling email notifications, which is a user-facing configuration or preference. The answer directly addresses how to disable email notifications in the notification settings, making the Q/A pair clear and relevant to the 'settings' intent.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I change the default timezone?",
+      "answer": "In 'Account Preferences', select 'Timezone' and choose the one you want to use as default.",
+      "intent": "settings",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about changing the default timezone, which is a user-facing configuration or preference. The answer provides a clear and relevant method to change the timezone in 'Account Preferences'. Therefore, the intent is 'settings' and the Q/A pair is of high quality.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I activate notifications on mobile?",
+      "answer": "Open the app, go to 'Settings' > 'Notifications', and enable push notifications.",
+      "intent": "settings",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about activating notifications on mobile, which relates to user-facing configuration/preferences. The answer provides clear instructions on how to enable notifications through the app's settings, which aligns well with the 'settings' intent.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I delete my account permanently?",
+      "answer": "Go to 'Account Management' > 'Delete Account'. This duplicates a similar entry and should be cleaned up.",
+      "intent": "account_management",
+      "quality_score": 0.6,
+      "issues": [
+        "Answer references internal note about duplication, which is not user-facing",
+        "Answer is brief and lacks detailed steps or confirmation information"
+      ],
+      "reasoning": "The question is about deleting an account permanently, which falls under account_management. The answer provides a basic navigation path but includes an internal note about duplication, which is not helpful to the user. The answer is also quite brief and could be improved with more detailed instructions or confirmation steps.",
+      "canonical_id": null
+    },
+    {
+      "question": "Can I recover my account if I lost access to my email?",
+      "answer": "Yes, contact our support team and verify your identity to regain access to your account.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question is about recovering an account when access to the email is lost, which falls under account lifecycle tasks such as account recovery. The answer appropriately addresses the question by advising to contact support and verify identity, which is relevant and helpful.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I change my notification sound?",
+      "answer": "On mobile, open the app, go to 'Settings' > 'Notifications' and choose a different sound.",
+      "intent": "settings",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about changing the notification sound, which is a user-facing configuration or preference, fitting the 'settings' intent. The answer provides clear instructions on how to change the notification sound in the app settings, making the Q/A pair coherent and relevant.",
+      "canonical_id": null
+    },
+    {
+      "question": "My account was suspended, what can I do?",
+      "answer": "Contact support through the Help Center. Suspensions are reviewed within 48 hours.",
+      "intent": "account_management",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question is about an account suspension, which relates to account lifecycle management. The answer provides a clear next step for the user to resolve the issue, which is contacting support and mentions the review timeframe. The Q/A pair is relevant and coherent, so the quality is high.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I update my recovery phone number?",
+      "answer": "Go to 'Security Settings', select 'Recovery Options', and add or update your phone number.",
+      "intent": "settings",
+      "quality_score": 0.9,
+      "issues": [],
+      "reasoning": "The question asks about updating the recovery phone number, which is a user-facing configuration related to account recovery options. This fits best under 'settings' as it involves updating recovery contact details. The answer is relevant and clear, providing straightforward instructions on where to update the phone number.",
+      "canonical_id": null
+    },
+    {
+      "question": "How do I change my password?",
+      "answer": "In 'Account Settings', go to 'Security' > 'Change Password', enter your old password, and set a new one.",
+      "intent": "security",
+      "quality_score": 1.0,
+      "issues": [],
+      "reasoning": "The question is about changing a password, which falls under security as it relates to authentication and safety workflows. The answer directly addresses the question with clear instructions, making the Q/A pair coherent and complete.",
+      "canonical_id": null
+    }
+  ],
+  "audit": [
+    {
+      "canonical": "How can I update my username?",
+      "duplicates": []
+    },
+    {
+      "canonical": "What's the process for recovering a forgotten username?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I change my username?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I switch to dark mode in the application?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Is it possible to link multiple email addresses to my account?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How can I export my user data from the platform?",
+      "duplicates": []
+    },
+    {
+      "canonical": "What are the requirements for creating a secure passphrase?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I enable biometric login for the mobile app?",
+      "duplicates": []
+    },
+    {
+      "canonical": "What steps should I take to permanently delete my account?",
+      "duplicates": []
+    },
+    {
+      "canonical": "What should I do if I suspect unauthorized access to my account?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How can I manage the frequency of email digests I receive?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I reset my password?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Where can I see my billing history?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Can I change my subscription plan?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I update my payment method?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Does the platform support two-factor authentication?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I update my profile picture?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Can I recover messages I deleted?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Is my personal data shared with third parties?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Can I use the platform in multiple languages?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I clear my search history?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I log out of all devices?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I restore accidentally deleted files?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Can I disable email notifications?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I change the default timezone?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I activate notifications on mobile?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I delete my account permanently?",
+      "duplicates": []
+    },
+    {
+      "canonical": "Can I recover my account if I lost access to my email?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I change my notification sound?",
+      "duplicates": []
+    },
+    {
+      "canonical": "My account was suspended, what can I do?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I update my recovery phone number?",
+      "duplicates": []
+    },
+    {
+      "canonical": "How do I change my password?",
+      "duplicates": []
+    }
+  ]
+}

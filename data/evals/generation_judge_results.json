@@ -1,0 +1,133 @@
+{
+  "created_at": "2025-09-30T18:29:28.124200+00:00",
+  "results": [
+    {
+      "case_id": "direct_password_change",
+      "category": "direct",
+      "query": "How do I change my password?",
+      "response": "In 'Account Settings', go to 'Security' > 'Change Password', enter your old password, and set a new one.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question with clear, concise steps on how to change the password, matching the expected behavior for a direct category."
+    },
+    {
+      "case_id": "direct_password_reset",
+      "category": "direct",
+      "query": "How do I reset my password?",
+      "response": "Click 'Forgot Password' on the login page, enter your email, and follow the link sent to reset your password.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question with clear, concise steps on how to reset the password, matching the expected behavior for a direct category."
+    },
+    {
+      "case_id": "direct_download_app",
+      "category": "direct",
+      "query": "How can I download the mobile application?",
+      "response": "Visit the App Store (iOS) or Google Play Store (Android), search for our app by name, and download it for free.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question by providing clear instructions on how to download the mobile application without any extra or irrelevant information."
+    },
+    {
+      "case_id": "direct_two_factor",
+      "category": "direct",
+      "query": "Does the platform support two-factor authentication?",
+      "response": "Yes, the platform supports two-factor authentication. You can enable 2FA in 'Security Settings' by linking your account to an authenticator app.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question about two-factor authentication support and provides a concise instruction on how to enable it, matching the expected behavior for a direct category."
+    },
+    {
+      "case_id": "paraphrase_password_change",
+      "category": "paraphrase",
+      "query": "I need to change my account password—how do I do it?",
+      "response": "In 'Account Settings', go to 'Security' > 'Change Password', enter your old password, and set a new one.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question with clear, concise steps on how to change the account password, matching the expected behavior for a paraphrase category."
+    },
+    {
+      "case_id": "paraphrase_password_reset",
+      "category": "paraphrase",
+      "query": "I forgot my password, what should I do?",
+      "response": "Click 'Forgot Password' on the login page, enter your email, and follow the link sent to reset your password.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question with clear, concise steps on how to reset a forgotten password, matching the expected behavior for a paraphrase category."
+    },
+    {
+      "case_id": "paraphrase_download_app",
+      "category": "paraphrase",
+      "query": "Where can I get the mobile app?",
+      "response": "Visit the App Store (iOS) or Google Play Store (Android), search for our app by name, and download it for free.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question by specifying where to get the mobile app and how to find it, without adding unnecessary information."
+    },
+    {
+      "case_id": "paraphrase_two_factor",
+      "category": "paraphrase",
+      "query": "Can I enable 2FA on the platform?",
+      "response": "Yes, you can enable 2FA on the platform. Just go to 'Security Settings' and link your account to an authenticator app to activate two-factor authentication.",
+      "score": "good",
+      "reasoning": "The response directly answers the user's question about enabling 2FA by confirming it is possible and providing the relevant steps concisely without extra information."
+    },
+    {
+      "case_id": "ambiguous_password",
+      "category": "ambiguous",
+      "query": "password",
+      "response": "Hmm, I'm not sure what you mean by that. As an FAQ assistant, I can help you with:  \n- changing your password in Account Settings  \n- resetting your password via the login page  \n- creating a secure passphrase with recommended guidelines  \n\nWhich one would you like to know more about?",
+      "score": "good",
+      "reasoning": "The response correctly identifies the ambiguity in the user's query 'password' and provides relevant options related to password management, then asks for clarification. It does not include unnecessary details or instructions, aligning well with the expected behavior for ambiguous queries."
+    },
+    {
+      "case_id": "ambiguous_account",
+      "category": "ambiguous",
+      "query": "account",
+      "response": "Hmm, I'm not sure what you mean by that. As an FAQ assistant, I can help you with:\n- handling unauthorized access and security concerns\n- resolving account suspensions\n- linking multiple email addresses to your account\nWhich topic would you like to explore?",
+      "score": "good",
+      "reasoning": "The response correctly identifies the ambiguity in the user's query and presents relevant options for clarification without providing unnecessary details or instructions."
+    },
+    {
+      "case_id": "ambiguous_billing",
+      "category": "ambiguous",
+      "query": "billing",
+      "response": "Hmm, I'm not sure what you mean by that. As an FAQ assistant, I can help you with:  \n- viewing and downloading your billing history  \n- updating your payment methods like credit card or PayPal  \n- changing your subscription plan to upgrade or downgrade  \nWhich billing topic would you like to explore?",
+      "score": "good",
+      "reasoning": "The response correctly identifies the ambiguity in the user's query 'billing' and provides relevant options related to billing, asking for clarification without giving step-by-step instructions or unrelated information."
+    },
+    {
+      "case_id": "off_topic_weather",
+      "category": "off_topic",
+      "query": "What's the weather in Paris?",
+      "response": "I'm an FAQ assistant and can't help with that request.",
+      "score": "good",
+      "reasoning": "The response correctly identifies the query as off-topic and provides the expected refusal message without additional information."
+    },
+    {
+      "case_id": "off_topic_pizza",
+      "category": "off_topic",
+      "query": "Order me a pizza",
+      "response": "I'm an FAQ assistant and can't help with that request.",
+      "score": "good",
+      "reasoning": "The response correctly identifies the request as off-topic and politely declines to assist, matching the expected behavior for the off-topic category."
+    },
+    {
+      "case_id": "off_topic_joke",
+      "category": "off_topic",
+      "query": "Tell me a joke",
+      "response": "I'm an FAQ assistant and can't help with that request.",
+      "score": "good",
+      "reasoning": "The response correctly identifies the request as off-topic and replies with the expected refusal message without adding extra information."
+    },
+    {
+      "case_id": "unknown_sso",
+      "category": "unknown",
+      "query": "Do you support SSO?",
+      "response": "Sorry, I don't have information on SSO support. Please reach out to support@example.com.",
+      "score": "good",
+      "reasoning": "The response correctly uses the explicit fallback message for an unknown topic, as required by the rubric."
+    },
+    {
+      "case_id": "unknown_slack",
+      "category": "unknown",
+      "query": "Can you integrate with Slack?",
+      "response": "Sorry, I don't have information on Slack integration. Please reach out to support@example.com.",
+      "score": "good",
+      "reasoning": "The response correctly uses the explicit fallback message for an unknown category question about Slack integration, matching the expected behavior."
+    }
+  ]
+}

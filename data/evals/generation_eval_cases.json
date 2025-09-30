@@ -1,0 +1,82 @@
+[
+  {
+    "id": "direct_password_change",
+    "category": "direct",
+    "query": "How do I change my password?"
+  },
+  {
+    "id": "direct_password_reset",
+    "category": "direct",
+    "query": "How do I reset my password?"
+  },
+  {
+    "id": "direct_download_app",
+    "category": "direct",
+    "query": "How can I download the mobile application?"
+  },
+  {
+    "id": "direct_two_factor",
+    "category": "direct",
+    "query": "Does the platform support two-factor authentication?"
+  },
+  {
+    "id": "paraphrase_password_change",
+    "category": "paraphrase",
+    "query": "I need to change my account password—how do I do it?"
+  },
+  {
+    "id": "paraphrase_password_reset",
+    "category": "paraphrase",
+    "query": "I forgot my password, what should I do?"
+  },
+  {
+    "id": "paraphrase_download_app",
+    "category": "paraphrase",
+    "query": "Where can I get the mobile app?"
+  },
+  {
+    "id": "paraphrase_two_factor",
+    "category": "paraphrase",
+    "query": "Can I enable 2FA on the platform?"
+  },
+  {
+    "id": "ambiguous_password",
+    "category": "ambiguous",
+    "query": "password"
+  },
+  {
+    "id": "ambiguous_account",
+    "category": "ambiguous",
+    "query": "account"
+  },
+  {
+    "id": "ambiguous_billing",
+    "category": "ambiguous",
+    "query": "billing"
+  },
+  {
+    "id": "off_topic_weather",
+    "category": "off_topic",
+    "query": "What's the weather in Paris?"
+  },
+  {
+    "id": "off_topic_pizza",
+    "category": "off_topic",
+    "query": "Order me a pizza"
+  },
+  {
+    "id": "off_topic_joke",
+    "category": "off_topic",
+    "query": "Tell me a joke"
+  },
+  {
+    "id": "unknown_sso",
+    "category": "unknown",
+    "query": "Do you support SSO?"
+  },
+  {
+    "id": "unknown_slack",
+    "category": "unknown",
+    "query": "Can you integrate with Slack?"
+  }
+]

@@ -1,0 +1,245 @@
+{
+  "created_at": "2025-09-30T20:30:40.605223+00:00",
+  "results": [
+    {
+      "query_id": "direct_password_change",
+      "query": "How do I change my password?",
+      "expected_question": "How do I change my password?",
+      "retrieved_questions": [
+        "How do I change my password?",
+        "How do I reset my password?",
+        "How do I change my notification sound?",
+        "How can I update my username?",
+        "Can I change my subscription plan?"
+      ],
+      "scores": [
+        1.0,
+        0.7927702069282532,
+        0.5181968212127686,
+        0.5015498995780945,
+        0.47780442237854004
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "direct_password_reset",
+      "query": "How do I reset my password?",
+      "expected_question": "How do I reset my password?",
+      "retrieved_questions": [
+        "How do I reset my password?",
+        "How do I change my password?",
+        "How can I update my username?",
+        "How do I update my payment method?",
+        "How do I update my recovery phone number?"
+      ],
+      "scores": [
+        1.0,
+        0.7597964406013489,
+        0.42160770297050476,
+        0.4003787040710449,
+        0.3980685770511627
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "direct_download_app",
+      "query": "How can I download the mobile application?",
+      "expected_question": "How can I download the mobile application?",
+      "retrieved_questions": [
+        "How can I download the mobile application?",
+        "How do I activate notifications on mobile?",
+        "How do I enable biometric login for the mobile app?",
+        "How do I switch to dark mode in the application?",
+        "How can I export my user data from the platform?"
+      ],
+      "scores": [
+        1.0,
+        0.41950172185897827,
+        0.39698901772499084,
+        0.3542766571044922,
+        0.26570242643356323
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "direct_two_factor",
+      "query": "Does the platform support two-factor authentication?",
+      "expected_question": "Does the platform support two-factor authentication?",
+      "retrieved_questions": [
+        "Does the platform support two-factor authentication?",
+        "Can I use the platform in multiple languages?",
+        "How do I enable biometric login for the mobile app?",
+        "Do you support integration with Google Drive?",
+        "How can I export my user data from the platform?"
+      ],
+      "scores": [
+        1.0,
+        0.3661070466041565,
+        0.36078080534935,
+        0.3081830143928528,
+        0.30559757351875305
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "direct_billing_history",
+      "query": "Where can I see my billing history?",
+      "expected_question": "Where can I see my billing history?",
+      "retrieved_questions": [
+        "Where can I see my billing history?",
+        "How do I update my payment method?",
+        "Where can I find the terms of service?",
+        "How do I clear my search history?",
+        "Can I change my subscription plan?"
+      ],
+      "scores": [
+        1.0,
+        0.33899468183517456,
+        0.3263368606567383,
+        0.325375497341156,
+        0.30209049582481384
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "direct_data_export",
+      "query": "How can I export my user data from the platform?",
+      "expected_question": "How can I export my user data from the platform?",
+      "retrieved_questions": [
+        "How can I export my user data from the platform?",
+        "Can I use the platform in multiple languages?",
+        "Is my personal data shared with third parties?",
+        "Does the platform support two-factor authentication?",
+        "How can I update my username?"
+      ],
+      "scores": [
+        1.0,
+        0.40653547644615173,
+        0.33162921667099,
+        0.3247982859611511,
+        0.31329289078712463
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "paraphrase_password_change",
+      "query": "I need to change my account password—how do I do it?",
+      "expected_question": "How do I change my password?",
+      "retrieved_questions": [
+        "How do I change my password?",
+        "How do I reset my password?",
+        "What should I do if I suspect unauthorized access to my account?",
+        "How can I update my username?",
+        "What steps should I take to permanently delete my account?"
+      ],
+      "scores": [
+        1.0,
+        0.7987069487571716,
+        0.590192437171936,
+        0.5594009160995483,
+        0.5540984869003296
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "paraphrase_password_reset",
+      "query": "I forgot my password, what should I do?",
+      "expected_question": "How do I reset my password?",
+      "retrieved_questions": [
+        "How do I reset my password?",
+        "How do I change my password?",
+        "What should I do if I suspect unauthorized access to my account?",
+        "What steps should I take to permanently delete my account?",
+        "My account was suspended, what can I do?"
+      ],
+      "scores": [
+        0.9604915380477905,
+        0.8711711764335632,
+        0.8121282458305359,
+        0.7030731439590454,
+        0.7013997435569763
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "paraphrase_download_app",
+      "query": "Where can I get the mobile app?",
+      "expected_question": "How can I download the mobile application?",
+      "retrieved_questions": [
+        "How can I download the mobile application?",
+        "How do I enable biometric login for the mobile app?",
+        "How do I activate notifications on mobile?",
+        "Where can I find the terms of service?",
+        "Where can I see my billing history?"
+      ],
+      "scores": [
+        0.9269088506698608,
+        0.6773198843002319,
+        0.5799443125724792,
+        0.5339008569717407,
+        0.5018854737281799
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "paraphrase_two_factor",
+      "query": "Can I enable 2FA on the platform?",
+      "expected_question": "Does the platform support two-factor authentication?",
+      "retrieved_questions": [
+        "Does the platform support two-factor authentication?",
+        "How do I enable biometric login for the mobile app?",
+        "Can I use the platform in multiple languages?",
+        "How can I export my user data from the platform?",
+        "How do I activate notifications on mobile?"
+      ],
+      "scores": [
+        0.9190232753753662,
+        0.7217592000961304,
+        0.6919786930084229,
+        0.612163782119751,
+        0.5844860076904297
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "paraphrase_billing_history",
+      "query": "How do I check my past invoices?",
+      "expected_question": "Where can I see my billing history?",
+      "retrieved_questions": [
+        "Where can I see my billing history?",
+        "How do I update my payment method?",
+        "How do I reset my password?",
+        "How do I contact customer support?",
+        "How do I change my password?"
+      ],
+      "scores": [
+        0.8509426116943359,
+        0.7021242380142212,
+        0.6638167500495911,
+        0.6320099830627441,
+        0.628726601600647
+      ],
+      "hit_rank": 1
+    },
+    {
+      "query_id": "paraphrase_data_export",
+      "query": "Is there a way to download all my account data?",
+      "expected_question": "How can I export my user data from the platform?",
+      "retrieved_questions": [
+        "How can I export my user data from the platform?",
+        "Is it possible to link multiple email addresses to my account?",
+        "Is my personal data shared with third parties?",
+        "What steps should I take to permanently delete my account?",
+        "Can I recover my account if I lost access to my email?"
+      ],
+      "scores": [
+        0.8216129541397095,
+        0.8082748055458069,
+        0.7345962524414062,
+        0.697983980178833,
+        0.6974769830703735
+      ],
+      "hit_rank": 1
+    }
+  ]
+}

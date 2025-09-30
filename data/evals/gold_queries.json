@@ -1,0 +1,62 @@
+[
+  {
+    "id": "direct_password_change",
+    "query": "How do I change my password?",
+    "expected_question": "How do I change my password?"
+  },
+  {
+    "id": "direct_password_reset",
+    "query": "How do I reset my password?",
+    "expected_question": "How do I reset my password?"
+  },
+  {
+    "id": "direct_download_app",
+    "query": "How can I download the mobile application?",
+    "expected_question": "How can I download the mobile application?"
+  },
+  {
+    "id": "direct_two_factor",
+    "query": "Does the platform support two-factor authentication?",
+    "expected_question": "Does the platform support two-factor authentication?"
+  },
+  {
+    "id": "direct_billing_history",
+    "query": "Where can I see my billing history?",
+    "expected_question": "Where can I see my billing history?"
+  },
+  {
+    "id": "direct_data_export",
+    "query": "How can I export my user data from the platform?",
+    "expected_question": "How can I export my user data from the platform?"
+  },
+  {
+    "id": "paraphrase_password_change",
+    "query": "I need to change my account password—how do I do it?",
+    "expected_question": "How do I change my password?"
+  },
+  {
+    "id": "paraphrase_password_reset",
+    "query": "I forgot my password, what should I do?",
+    "expected_question": "How do I reset my password?"
+  },
+  {
+    "id": "paraphrase_download_app",
+    "query": "Where can I get the mobile app?",
+    "expected_question": "How can I download the mobile application?"
+  },
+  {
+    "id": "paraphrase_two_factor",
+    "query": "Can I enable 2FA on the platform?",
+    "expected_question": "Does the platform support two-factor authentication?"
+  },
+  {
+    "id": "paraphrase_billing_history",
+    "query": "How do I check my past invoices?",
+    "expected_question": "Where can I see my billing history?"
+  },
+  {
+    "id": "paraphrase_data_export",
+    "query": "Is there a way to download all my account data?",
+    "expected_question": "How can I export my user data from the platform?"
+  }
+]

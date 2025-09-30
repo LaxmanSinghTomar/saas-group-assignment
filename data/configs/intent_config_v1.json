@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "intents": [
+    {
+      "id": "account_management",
+      "description": "Account lifecycle tasks: login credentials, recovery, billing/profile updates, subscription management, deleting or restoring accounts."
+    },
+    {
+      "id": "security",
+      "description": "Authentication and safety workflows: passwords, MFA/2FA, suspicious activity, biometric login, security alerts or remediation steps."
+    },
+    {
+      "id": "settings",
+      "description": "User-facing configuration and preferences: UI display, notifications, language, timezones, recovery contact details, profile personalization."
+    },
+    {
+      "id": "data_privacy",
+      "description": "Compliance and data rights: exporting data, privacy policies, retention, data sharing or deletion requests."
+    }
+  ],
+  "special_intents": {
+    "unknown": {
+      "id": "unknown",
+      "description": "Legitimate product or support question that does not yet fit an existing category (e.g., integrations, feature availability, legal/compliance pages)."
+    },
+    "off_topic": {
+      "id": "off_topic",
+      "description": "Gibberish, chit-chat, or mismatched Q/A pairs that should be excluded from the knowledge base."
+    }
+  }
+}
