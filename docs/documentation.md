@@ -677,17 +677,5 @@ curl -X POST http://localhost:8000/cache/clear
 
 ---
 
-## For Deeper Technical Details
-
-See `docs/TECHNICAL_REPORT.md` for:
-- Complete implementation details
-- Iterative development journey
-- Full evaluation methodology
-- Production scaling strategies
-- Technology stack rationale
-- Code examples and algorithms
-
----
-
 **Ready for deployment and real-world usage.**
 
