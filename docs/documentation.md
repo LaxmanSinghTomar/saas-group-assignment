@@ -87,22 +87,91 @@ combined_score = 0.7 × semantic_similarity + 0.3 × bm25_score
 
 ## Alternatives Considered
 
-### 1. Pure Semantic Search
+### 1. Pure Intent Classification (No RAG)
+
+**The simpler alternative:**
+```python
+user_query = "How do I reset my password?"
+intent = classify_intent(user_query)  # → "password_management"
+return faq_mapping[intent]  # Direct lookup
+```
+
+**Why we rejected this:**
+
+1. **Many-to-many relationships**: Single intent maps to multiple FAQs
+   - Intent: "password_management" → reset, change, requirements, 2FA
+   - User asks "I forgot my password" → needs specific "reset" FAQ, not all 4
+   - Intent classification alone is too coarse-grained
+
+2. **Semantic nuance**: Embeddings capture specific intent better than categories
+   ```
+   Query: "I can't remember my login credentials"
+   - Intent classification: "authentication_issues" (generic)
+   - Semantic search: Matches "username recovery" FAQ (precise)
+   ```
+
+3. **Maintenance burden**: Adding new FAQs requires classifier updates
+   - RAG: Just add to database, embeddings handle it automatically
+   - Intent classification: Define new intent, retrain classifier, update mappings
+
+4. **Paraphrasing**: Semantic search naturally handles variations
+   - "update username" ≈ "change username" ≈ "modify username" (similarity ~0.88-0.92)
+   - Intent classifier needs training data for each variation
+
+**Our hybrid approach:** Use intents for organization and analytics, but retrieve at FAQ-level granularity via semantic search.
+
+---
+
+### 2. Pure Semantic Search
 **Trade-off:** Simpler but fails on keyword queries → Rejected after empirical testing
 
-### 2. Intent Classification + Scoped Search
+### 3. Reciprocal Rank Fusion (RRF) for Score Combination
+
+**What RRF would do:**
+```python
+rrf_score = 1/(k + semantic_rank) + 1/(k + bm25_rank)
+```
+
+**Why linear fusion is better here:**
+
+RRF is designed for:
+- Large corpora where different systems return non-overlapping candidate sets
+- Scenarios where rank position matters more than absolute scores
+- Combining rankings from truly independent retrieval systems
+
+**Our situation:**
+- Only 36 documents - both semantic and BM25 see ALL documents
+- Complete overlap in candidate sets
+- **Score transparency matters**: We need `semantic_score >= 0.85` for confidence thresholds
+- Small scale where normalized scores are stable
+
+**Linear fusion benefits:**
+```python
+combined = 0.7 × semantic_normalized + 0.3 × bm25_normalized
+```
+
+- **Interpretable**: Weights directly show contribution (70% semantic, 30% keyword)
+- **Tunable**: Easy to adjust via API (`/settings`)
+- **Transparent**: Raw scores visible in response for debugging
+- **Preserves score information**: Can use semantic score for confidence classification
+
+**When to reconsider RRF:** If corpus grows to 500+ FAQs with multiple specialized retrieval systems (e.g., dense + sparse + cross-encoder reranking).
+
+---
+
+### 4. Intent Classification + Scoped Search
 **Trade-off:** Better off-topic filtering but adds latency/cost to majority case → Deferred until data justifies
 
-### 3. Template-Based Responses
+### 5. Template-Based Responses
 **Trade-off:** Faster but can't handle nuance or edge cases → LLM generation provides better UX
 
-### 4. Vector Database (Pinecone, Weaviate)
+### 6. Vector Database (Pinecone, Weaviate)
 **Trade-off:** Production-grade but overkill for 36 FAQs → In-memory NumPy sufficient for current scale
 
-### 5. Fine-Tuned Classification Model
+### 7. Fine-Tuned Classification Model
 **Trade-off:** Lower per-query cost but requires training data we don't have → LLM-based classification more practical
 
-### 6. Keep All FAQ Variations
+### 8. Keep All FAQ Variations
 **Trade-off:** More coverage but semantic search handles paraphrasing automatically → Canonical-only keeps database clean
 
 ---
@@ -278,6 +347,68 @@ make docker-stop        # Stop and remove container
 make docker-logs        # View container logs (follow mode)
 make docker-shell       # Open bash shell in running container
 ```
+
+---
+
+## API Response Structure & Score Meanings
+
+### Understanding the Response Fields
+
+**Top-Level Fields:**
+```json
+{
+  "answer": "...",
+  "semantic_confidence": "low",      // Intent understanding confidence
+  "top_combined_score": 0.92,        // Best hybrid match quality
+  "results": [...]
+}
+```
+
+**`semantic_confidence`** (high/medium/low):
+- Measures how well we understand the user's **specific intent**
+- Based on semantic similarity score (≥0.85 high, ≥0.65 medium, <0.65 low)
+- **Diagnostic metadata** - LLM makes independent response decisions from context
+- Low confidence with high combined score = keyword match with unclear intent
+
+**`top_combined_score`** (0.0 - 1.0):
+- Highest score from hybrid search (semantic 70% + BM25 30%)
+- Indicates overall match quality including keyword relevance
+- All scores normalized to [0, 1] range for consistency
+
+**Per-Result Scores:**
+```json
+{
+  "combined_score": 0.92,        // Hybrid score (semantic + BM25)
+  "semantic_score": 0.38,        // Semantic similarity [0,1]
+  "bm25_score": 1.0,             // BM25 keyword match [0,1] (normalized)
+  "semantic_confidence": "low"   // Derived from semantic_score
+}
+```
+
+**Why all scores are normalized:**
+- Consistent [0, 1] range makes comparison intuitive
+- Prevents one scoring method from dominating
+- Makes hybrid weights (70/30) directly interpretable
+- Enables score-based confidence thresholds
+
+**Example: Query "password"**
+```json
+{
+  "semantic_confidence": "low",      // Unclear which password task
+  "top_combined_score": 0.92,        // Strong keyword match
+  "results": [
+    {
+      "question": "How do I change my password?",
+      "combined_score": 0.92,        // (0.7 × 0.38) + (0.3 × 1.0) = 0.566 normalized
+      "semantic_score": 0.38,        // Low - ambiguous intent
+      "bm25_score": 1.0,             // High - exact keyword match
+      "semantic_confidence": "low"
+    }
+  ]
+}
+```
+
+**The LLM sees low semantic confidence with multiple relevant FAQs → asks for clarification.**
 
 ---
 

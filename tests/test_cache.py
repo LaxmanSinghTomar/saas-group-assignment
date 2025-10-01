@@ -20,7 +20,8 @@ def test_cache_put_and_get():
     # Create a mock response
     response = QueryResponse(
         answer="Test answer",
-        confidence="high",
+        semantic_confidence="high",
+        top_combined_score=0.95,
         results=[],
         metadata={"cached": False}
     )
@@ -54,7 +55,8 @@ def test_cache_size_limit():
     # We can't easily test the full 1000 limit, but we can verify the logic works
     response = QueryResponse(
         answer="Test",
-        confidence="high",
+        semantic_confidence="high",
+        top_combined_score=0.90,
         results=[],
         metadata={}
     )

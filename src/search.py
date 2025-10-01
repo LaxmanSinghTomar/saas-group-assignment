@@ -38,6 +38,24 @@ class ScoredFAQ:
 
     @property
     def confidence(self) -> str:
+        """Semantic intent understanding confidence (diagnostic metadata).
+        
+        Indicates how well the query semantically matches the FAQ question:
+        - high (≥0.85): Strong semantic match, clear user intent
+        - medium (≥0.65): Moderate match, some ambiguity
+        - low (<0.65): Weak semantic match, keyword query or unclear intent
+        
+        Note: This is diagnostic metadata about semantic similarity, independent
+        of the combined_score (which includes BM25 keyword matching). The LLM
+        generation layer makes final response decisions based on full context,
+        not by checking this field.
+        
+        Example: Query "password"
+        - combined_score: 0.92 (high) - BM25 found keyword matches
+        - semantic_score: 0.38 (low) - Intent unclear
+        - confidence: "low" - Reflects semantic ambiguity
+        - LLM response: Clarification list (decided from context)
+        """
         if self.semantic_score >= HIGH_CONFIDENCE_THRESHOLD:
             return "high"
         if self.semantic_score >= MEDIUM_CONFIDENCE_THRESHOLD:
@@ -237,7 +255,7 @@ def hybrid_search(
                 score=float(combined[doc_index]),
                 rank=rank,
                 semantic_score=float(semantic_scores[doc_index]),
-                bm25_score=float(bm25_scores[doc_index]),
+                bm25_score=float(bm25_norm[doc_index]),  # Use normalized score for consistency
             )
         )
 

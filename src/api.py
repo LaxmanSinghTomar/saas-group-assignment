@@ -40,7 +40,8 @@ class QueryRequest(BaseModel):
 
 class QueryResponse(BaseModel):
     answer: str
-    confidence: str
+    semantic_confidence: str = Field(..., description="Confidence in semantic intent understanding (high/medium/low)")
+    top_combined_score: float = Field(..., description="Highest combined score from hybrid search (semantic + BM25)")
     results: list
     metadata: dict
 
@@ -172,9 +173,10 @@ async def query_endpoint(request: QueryRequest):
         cached_response = get_from_cache(request.query)
         if cached_response is not None:
             _cache_hits += 1
-            # Update metadata to indicate cache hit
-            cached_response.metadata["cached"] = True
-            return cached_response
+            # Return copy with updated metadata to avoid mutating cached object
+            response_dict = cached_response.model_dump()
+            response_dict["metadata"]["cached"] = True
+            return QueryResponse(**response_dict)
         
         _cache_misses += 1
         
@@ -238,21 +240,24 @@ async def query_endpoint(request: QueryRequest):
                 "question": scored.document.question,
                 "answer": scored.document.answer,
                 "intent": scored.document.intent,
-                "score": scored.score,
+                "combined_score": scored.score,
                 "semantic_score": scored.semantic_score,
                 "bm25_score": scored.bm25_score,
-                "confidence": scored.confidence,
+                "semantic_confidence": scored.confidence,
             }
             for scored in search_response.results
         ]
 
-        confidence = "low"
+        semantic_confidence = "low"
+        top_combined_score = 0.0
         if search_response.results:
-            confidence = search_response.results[0].confidence
+            semantic_confidence = search_response.results[0].confidence
+            top_combined_score = search_response.results[0].score
 
         response = QueryResponse(
             answer=generation["answer"],
-            confidence=confidence,
+            semantic_confidence=semantic_confidence,
+            top_combined_score=top_combined_score,
             results=results_payload,
             metadata={
                 "generation": generation["metadata"],

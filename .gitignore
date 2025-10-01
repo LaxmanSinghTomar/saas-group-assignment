@@ -12,3 +12,9 @@ wheels/
 # Environment and secrets
 .env
 docs/assignment.MD
+
+# macOS
+.DS_Store
+
+# Duplicate/generated files
+data/processed/faq_index_v2.pkl
