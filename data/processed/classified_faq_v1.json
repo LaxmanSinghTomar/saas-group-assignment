@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-30T11:57:22.333388+00:00",
+  "generated_at": "2025-10-08T06:46:14.264643+00:00",
   "metadata": {
     "model": "gpt-4.1-mini",
     "total_raw": 42
@@ -11,15 +11,15 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about updating the username, which is part of managing account details. The answer provides clear steps to update the username in account settings, which aligns well with the intent of account management. The answer is relevant and helpful, so the quality score is high."
+      "reasoning": "The question asks about updating a username, which is related to managing account profile information. The answer provides clear steps to update the username via account settings. This fits well within the 'account_management' intent as it involves updating profile details associated with the account."
     },
     {
       "question": "What's the process for recovering a forgotten username?",
       "answer": "On the login page, click 'Forgot Username', enter the email associated with your account, and follow the instructions sent to your email.",
       "intent": "account_management",
-      "quality_score": 1.0,
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about recovering a forgotten username, which is related to account lifecycle tasks such as login credentials recovery. The answer provides a clear and relevant process for recovering the username, matching the question perfectly."
+      "reasoning": "The question asks about recovering a forgotten username, which is related to account lifecycle tasks such as login credentials recovery. The answer provides a clear and relevant process for recovering the username, matching the question well. Therefore, the intent is account_management and the quality is high."
     },
     {
       "question": "How do I change my username?",
@@ -27,7 +27,7 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about changing the username, which is part of managing account details. The answer provides a clear and direct method to change the username through account settings, which aligns well with account management tasks. The answer is concise and informative, though it could be improved by mentioning any restrictions or confirmation steps."
+      "reasoning": "The question asks about changing a username, which is related to managing account details. The answer provides a clear and relevant method to change the username through account settings. This fits well under account_management as it involves updating profile information."
     },
     {
       "question": "How do I switch to dark mode in the application?",
@@ -35,7 +35,7 @@
       "intent": "settings",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about switching to dark mode, which is a user-facing configuration related to UI display preferences. The answer provides clear instructions on how to enable or disable dark mode in the application settings, which aligns well with the 'settings' intent. The Q&A pair is coherent and complete."
+      "reasoning": "The question asks about switching to dark mode, which is a user-facing configuration related to UI display preferences. The answer correctly explains how to enable or disable dark mode in the application settings, making the Q/A pair relevant and clear."
     },
     {
       "question": "Is it possible to link multiple email addresses to my account?",
@@ -43,15 +43,15 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about linking multiple email addresses to an account, which relates to managing account credentials and profile settings. The answer provides clear instructions on how to add and verify additional emails, which fits within account management tasks."
+      "reasoning": "The question is about linking multiple email addresses to an account, which relates to managing account details. The answer provides clear instructions on how to add linked emails in profile settings, which aligns well with account management tasks. The Q/A pair is coherent and relevant."
     },
     {
       "question": "How can I export my user data from the platform?",
       "answer": "Navigate to 'Privacy and Data' in your account settings, select 'Export Data', choose the data types you want, and click 'Generate Export'.",
       "intent": "data_privacy",
-      "quality_score": 1.0,
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about exporting user data, which relates to data privacy and user data rights. The answer provides clear and relevant instructions on how to export data from the platform, matching the question perfectly."
+      "reasoning": "The question asks about exporting user data, which relates to data privacy and compliance with data rights. The answer provides clear steps on how to export data from the platform, which aligns well with the question. The Q/A pair is relevant and coherent, so the quality score is high."
     },
     {
       "question": "What are the requirements for creating a secure passphrase?",
@@ -59,7 +59,7 @@
       "intent": "security",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about requirements for creating a secure passphrase, which relates to authentication and safety workflows, fitting the 'security' intent. The answer provides relevant guidance on passphrase creation, making the Q/A pair coherent and high quality."
+      "reasoning": "The question asks about requirements for creating a secure passphrase, which relates to authentication and safety workflows, fitting the 'security' intent. The answer provides relevant guidance on creating a secure passphrase, so the Q/A pair is coherent and high quality."
     },
     {
       "question": "How do I enable biometric login for the mobile app?",
@@ -67,15 +67,15 @@
       "intent": "security",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about enabling biometric login, which is related to authentication and security. The answer provides clear, relevant steps to enable biometric login in the mobile app, matching the question perfectly."
+      "reasoning": "The question asks about enabling biometric login, which is related to authentication and safety workflows, fitting the 'security' intent. The answer directly addresses the question with clear steps, making the Q/A pair coherent and high quality."
     },
     {
       "question": "What steps should I take to permanently delete my account?",
       "answer": "Go to 'Account Management', select 'Delete Account', read through the implications, enter your password, and confirm deletion. This action cannot be undone.",
       "intent": "account_management",
-      "quality_score": 1.0,
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about permanently deleting an account, which is a task related to account lifecycle management. The answer provides clear and relevant steps to delete the account, matching the question perfectly."
+      "reasoning": "The question asks about permanently deleting an account, which is an account lifecycle task. The answer provides clear steps on how to delete the account, matching the question well. The answer is concise and informative, though it could be improved by mentioning any additional verification steps or consequences explicitly."
     },
     {
       "question": "What should I do if I suspect unauthorized access to my account?",
@@ -83,7 +83,7 @@
       "intent": "security",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question is about suspected unauthorized access to an account, which relates to security concerns. The answer provides appropriate security-related steps to take, such as logging out of all sessions, changing the password, and contacting the security team. Therefore, the intent is correctly classified as 'security' and the Q&A pair is of high quality with no issues."
+      "reasoning": "The question is about suspected unauthorized access, which relates to account security. The answer provides clear steps to secure the account and report the issue, matching the security intent perfectly."
     },
     {
       "question": "How can I manage the frequency of email digests I receive?",
@@ -91,7 +91,7 @@
       "intent": "settings",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about managing the frequency of email digests, which relates to user-facing configuration and preferences. The answer provides clear instructions on how to adjust these settings, making the FAQ entry relevant and complete."
+      "reasoning": "The question asks about managing the frequency of email digests, which relates to user-facing configuration and preferences. The answer provides clear instructions on how to adjust these settings, making the FAQ entry relevant and well-formed."
     },
     {
       "question": "How do I reset my password?",
@@ -99,23 +99,23 @@
       "intent": "security",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question is about resetting a password, which is related to authentication and security workflows. The answer provides a clear and correct method to reset the password, matching the question perfectly."
+      "reasoning": "The question is about resetting a password, which is related to authentication and safety workflows, fitting the 'security' intent. The answer directly addresses the question with clear, actionable steps, making the Q/A pair high quality."
     },
     {
       "question": "Where can I see my billing history?",
       "answer": "In account settings, go to 'Billing' > 'Payment History' to view and download your past invoices.",
       "intent": "account_management",
-      "quality_score": 1.0,
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about viewing billing history, which is related to account lifecycle tasks such as billing and profile updates. The answer provides a clear and direct method to access billing history within account settings, making it a high-quality and relevant response."
+      "reasoning": "The question asks about viewing billing history, which relates to account lifecycle tasks such as billing and profile updates. The answer correctly directs the user to the billing section in account settings to view payment history, which is relevant and clear."
     },
     {
       "question": "Can I change my subscription plan?",
       "answer": "Yes, navigate to 'Billing' > 'Manage Subscription' and select the plan you want to upgrade or downgrade to.",
       "intent": "account_management",
-      "quality_score": 1.0,
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about changing a subscription plan, which falls under account lifecycle tasks such as subscription management. The answer directly addresses how to change the subscription plan, making it a high-quality and relevant FAQ entry."
+      "reasoning": "The question is about changing a subscription plan, which falls under account lifecycle tasks such as subscription management, matching the 'account_management' intent. The answer is relevant and clear, providing instructions on how to change the subscription plan."
     },
     {
       "question": "Hi",
@@ -123,9 +123,9 @@
       "intent": "off_topic",
       "quality_score": 0.0,
       "issues": [
-        "Question is a greeting and does not relate to the answer about billing details."
+        "Question is a greeting and does not relate to the answer provided."
       ],
-      "reasoning": "The question 'Hi' is a greeting and does not correspond to the answer about updating billing details. Therefore, the FAQ entry is off-topic and the Q/A pair is mismatched."
+      "reasoning": "The question 'Hi' is a greeting and does not correspond to the answer about updating billing details. Therefore, the FAQ entry is off-topic and not useful as a FAQ."
     },
     {
       "question": "How do I update my payment method?",
@@ -133,15 +133,15 @@
       "intent": "account_management",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about updating the payment method, which is related to account lifecycle tasks such as billing and profile updates. The answer directly addresses how to update payment methods, making it a clear fit for the 'account_management' intent. The Q&A pair is clear, relevant, and complete."
+      "reasoning": "The question asks about updating the payment method, which is related to billing and profile updates, fitting the account_management intent. The answer directly addresses how to update payment methods, making the Q/A pair clear and relevant."
     },
     {
       "question": "Does the platform support two-factor authentication?",
       "answer": "Yes, enable 2FA in 'Security Settings' by linking your account to an authenticator app.",
       "intent": "security",
-      "quality_score": 1.0,
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about two-factor authentication, which is a security feature. The answer directly addresses how to enable 2FA, fitting perfectly under the 'security' intent. The Q&A pair is clear, relevant, and complete."
+      "reasoning": "The question asks about two-factor authentication, which is a security feature. The answer provides a clear and relevant response about enabling 2FA in security settings, matching the intent well. The answer is concise but sufficient, so the quality score is high but not perfect."
     },
     {
       "question": "What's the best pizza topping?",
@@ -152,15 +152,15 @@
         "Question is unrelated to the product or service.",
         "Answer does not address the question about pizza toppings."
       ],
-      "reasoning": "The question asks about the best pizza topping, which is unrelated to any product or service. The answer talks about enabling two-factor authentication, which does not answer the question. Therefore, this FAQ entry is off-topic and has a quality score of 0."
+      "reasoning": "The question asks about the best pizza topping, which is unrelated to any product or service context. The answer discusses two-factor authentication, which does not answer the question. Therefore, this FAQ entry is off-topic and of very low quality."
     },
     {
       "question": "How can I download the mobile application?",
       "answer": "Visit the App Store (iOS) or Google Play Store (Android), search for our app by name, and download it for free.",
-      "intent": "product_access_and_availability",
-      "quality_score": 1.0,
+      "intent": "unknown",
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about how to download the mobile application, which relates to product access and availability. The answer correctly provides instructions on where and how to download the app, making it a good match and high quality."
+      "reasoning": "The question asks about downloading the mobile application, which is related to obtaining the app rather than account management, security, settings, or data privacy. It does not fit into the predefined categories except 'unknown' which covers legitimate product questions not fitting other categories. The answer is clear and directly addresses the question, so the quality is high."
     },
     {
       "question": "How do I update my profile picture?",
@@ -168,7 +168,7 @@
       "intent": "settings",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about updating a profile picture, which is a user-facing configuration and preference. The answer provides a clear and direct method to update the profile picture, matching the question perfectly."
+      "reasoning": "The question asks about updating a profile picture, which is a user-facing configuration and preference. The answer provides clear and relevant instructions on how to update the profile picture, matching the question perfectly."
     },
     {
       "question": "Can I recover messages I deleted?",
@@ -176,15 +176,15 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about recovering deleted messages, which relates to account data management and recovery. The answer clearly states that deleted messages cannot be recovered, which is relevant and directly addresses the question. Therefore, the intent is best classified as account_management."
+      "reasoning": "The question is about recovering deleted messages, which relates to account data management and recovery. The answer directly addresses the question by stating that deleted messages cannot be recovered. This fits best under account_management as it involves recovery of account data. The Q&A pair is clear and relevant, with no issues."
     },
     {
       "question": "How do I report a bug or technical issue?",
       "answer": "Use the 'Report a Problem' option in the Help Center or email our support team at support@example.com.",
-      "intent": "customer_support_and_issue_reporting",
-      "quality_score": 1.0,
+      "intent": "unknown",
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about reporting bugs or technical issues, which falls under customer support and issue reporting. The answer provides clear instructions on how to report a problem, matching the question perfectly."
+      "reasoning": "The question asks about reporting a bug or technical issue, which does not fit into account_management, security, settings, or data_privacy categories. It is a legitimate product support question, so 'unknown' is the best fit. The answer is clear and relevant, providing a method to report issues."
     },
     {
       "question": "Is my personal data shared with third parties?",
@@ -192,7 +192,7 @@
       "intent": "data_privacy",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about sharing personal data with third parties, which relates to data privacy concerns. The answer addresses data sharing practices and references the Privacy Policy, confirming the intent as data_privacy. The answer is clear and relevant, though it could be more detailed for higher quality."
+      "reasoning": "The question asks about sharing personal data with third parties, which relates to data privacy. The answer addresses data sharing practices and references the Privacy Policy, which is relevant and appropriate. The Q/A pair is clear and informative, though the answer could be more detailed for higher quality."
     },
     {
       "question": "Can I use the platform in multiple languages?",
@@ -200,7 +200,7 @@
       "intent": "settings",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about using the platform in multiple languages, which relates to user-facing configuration and preferences. The answer provides a clear and direct instruction on how to change the language setting, which fits well within the 'settings' intent. The Q&A pair is coherent and complete."
+      "reasoning": "The question asks about using the platform in multiple languages, which relates to user-facing configuration and preferences. The answer provides a clear and direct instruction on how to change the language setting, which fits well within the 'settings' intent. The Q/A pair is coherent and relevant."
     },
     {
       "question": "How do I clear my search history?",
@@ -208,23 +208,23 @@
       "intent": "settings",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about clearing search history, which is a user-facing configuration related to privacy settings. The answer provides a direct method to clear search history through 'Privacy Settings', which aligns with user settings and preferences. Therefore, the intent is 'settings'. The answer is clear and relevant, so the quality score is high."
+      "reasoning": "The question asks about clearing search history, which is a user-facing configuration related to privacy settings. This fits best under 'settings' as it involves managing user preferences and data visibility. The answer is clear and directly addresses the question, so the quality score is high."
     },
     {
       "question": "How do I contact customer support?",
       "answer": "You can reach our team via the 'Help Center' chat or by emailing support@example.com.",
-      "intent": "customer_support_and_issue_reporting",
-      "quality_score": 1.0,
+      "intent": "unknown",
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about contacting customer support, and the answer provides clear instructions on how to reach the support team via chat or email, which directly addresses the question."
+      "reasoning": "The question is about contacting customer support, which does not fall under account management, security, settings, or data privacy. It is a legitimate product support question, so 'unknown' is the best fit. The answer is relevant and clear, providing contact methods."
     },
     {
       "question": "Where can I find the terms of service?",
       "answer": "Scroll to the bottom of our website and click on 'Terms of Service'.",
-      "intent": "legal_and_policies",
+      "intent": "unknown",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about the location of the terms of service, which is a legal document. The answer provides a clear and direct instruction on where to find it on the website, making the FAQ entry relevant and accurate for the legal_and_policies intent."
+      "reasoning": "The question asks about the location of the terms of service, which relates to legal/compliance information. This does not fit into account_management, security, settings, or data_privacy categories. Therefore, it is classified as 'unknown'. The answer is clear and directly addresses the question, so the quality score is high."
     },
     {
       "question": "How do I log out of all devices?",
@@ -232,7 +232,7 @@
       "intent": "security",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about logging out of all devices, which is related to security and session management. The answer provides a clear and relevant instruction on how to perform this action within 'Security Settings'. The Q&A pair is coherent and addresses a security-related user action."
+      "reasoning": "The question is about logging out of all devices, which is related to security and session management. The answer provides a clear and relevant instruction on how to perform this action within 'Security Settings'. The Q/A pair is coherent and addresses a security-related concern."
     },
     {
       "question": "How do I restore accidentally deleted files?",
@@ -240,7 +240,7 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about restoring accidentally deleted files, which relates to managing user data within their account. The answer provides a clear and relevant method to restore files from 'Trash', which aligns well with account management tasks. The answer is concise and directly addresses the question, so the quality score is high."
+      "reasoning": "The question is about restoring accidentally deleted files, which relates to account lifecycle tasks such as restoring data associated with the user's account. The answer is clear and directly addresses the question, providing a straightforward method to restore files from 'Trash'. This fits best under 'account_management' as it involves managing user data within their account. The answer is concise and helpful, so the quality score is high."
     },
     {
       "question": "Can I disable email notifications?",
@@ -248,7 +248,7 @@
       "intent": "settings",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about disabling email notifications, which is a user-facing configuration and preference. The answer provides a clear and direct method to disable email notifications under 'Notification Settings'. Therefore, the intent is 'settings' and the Q/A pair is of high quality with no issues."
+      "reasoning": "The question asks about disabling email notifications, which relates to user-facing configuration and preferences. The answer directly addresses how to disable email notifications under 'Notification Settings', confirming the intent as 'settings' and the Q/A pair is clear and relevant."
     },
     {
       "question": "How do I change the default timezone?",
@@ -256,7 +256,7 @@
       "intent": "settings",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about changing the default timezone, which is a user-facing configuration and preference. The answer provides a clear and relevant instruction on how to change the timezone in 'Account Preferences'. Therefore, the intent is 'settings' and the quality of the answer is high."
+      "reasoning": "The question asks about changing the default timezone, which is a user-facing configuration and preference. The answer provides a clear and relevant instruction on how to change the timezone in 'Account Preferences'. Therefore, the intent is 'settings' and the quality is high."
     },
     {
       "question": "How do I activate notifications on mobile?",
@@ -264,7 +264,7 @@
       "intent": "settings",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about activating notifications on mobile, which relates to user-facing configuration and preferences. The answer provides clear steps to enable notifications in the app settings, which aligns well with the 'settings' intent."
+      "reasoning": "The question asks about activating notifications on mobile, which relates to user-facing configuration and preferences. The answer provides clear steps to enable notifications through the app's settings, which aligns well with the 'settings' intent. The Q/A pair is coherent and relevant."
     },
     {
       "question": "How do I delete my account permanently?",
@@ -272,10 +272,10 @@
       "intent": "account_management",
       "quality_score": 0.6,
       "issues": [
-        "Answer references internal note about duplication, which is not user-facing.",
+        "Answer references internal note about duplication, which is not user-facing and reduces clarity.",
         "Answer is brief and lacks detailed steps or confirmation information."
       ],
-      "reasoning": "The question is about deleting an account permanently, which falls under account_management. The answer provides a basic direction but includes an internal note about duplication, which is not helpful for users. The answer could be improved with more detailed instructions and confirmation steps."
+      "reasoning": "The question is about deleting an account permanently, which falls under account_management. The answer provides a basic direction but includes an internal note about duplication that is not helpful to the user. The answer could be improved by removing internal notes and providing clearer, more detailed instructions."
     },
     {
       "question": "Can I recover my account if I lost access to my email?",
@@ -283,15 +283,15 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about recovering an account when the user has lost access to their email, which falls under account lifecycle tasks such as account recovery. The answer provides a clear and relevant response on how to regain access by contacting support and verifying identity, which aligns well with the intent."
+      "reasoning": "The question is about recovering an account when access to the email is lost, which falls under account lifecycle tasks such as account recovery. The answer appropriately addresses the question by advising to contact support and verify identity, which is relevant and helpful."
     },
     {
       "question": "Do you support integration with Google Drive?",
       "answer": "Yes, go to 'Integrations' in settings and connect your Google account to enable Drive sync.",
-      "intent": "integrations",
-      "quality_score": 1.0,
+      "intent": "unknown",
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about integration with Google Drive, and the answer provides a clear and direct response on how to enable this integration. The intent matches the integrations category perfectly."
+      "reasoning": "The question asks about integration with Google Drive, which is a feature availability or integration question that does not fit into account_management, security, settings, or data_privacy categories. The answer is relevant and clear, providing instructions on how to enable the integration, so the quality is high."
     },
     {
       "question": "How do I change my notification sound?",
@@ -299,15 +299,15 @@
       "intent": "settings",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about changing the notification sound, which is a user-facing configuration and preference. The answer provides clear instructions on how to change the notification sound within the app settings, which matches the question well. Therefore, the intent is 'settings' and the quality is high."
+      "reasoning": "The question asks about changing the notification sound, which is a user-facing configuration and preference. The answer provides a clear and relevant method to change the notification sound within the app settings, matching the question well."
     },
     {
       "question": "What browsers are supported?",
       "answer": "We officially support the latest versions of Chrome, Firefox, Safari, and Edge.",
-      "intent": "product_access_and_availability",
-      "quality_score": 1.0,
+      "intent": "unknown",
+      "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about supported browsers, which relates to product access and availability. The answer directly addresses the question by listing the supported browsers, making the Q/A pair clear and relevant."
+      "reasoning": "The question asks about supported browsers, which relates to product compatibility or feature availability rather than account management, security, settings, or data privacy. Therefore, it fits best under 'unknown'. The answer is clear and directly addresses the question, so the quality score is high."
     },
     {
       "question": "My account was suspended, what can I do?",
@@ -315,7 +315,7 @@
       "intent": "account_management",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question is about an account suspension, which falls under account lifecycle tasks such as account status and recovery. The answer provides guidance on contacting support and the review timeline, which is relevant and helpful. The classification as 'account_management' is appropriate."
+      "reasoning": "The question is about an account suspension, which relates to account lifecycle management. The answer provides a clear next step for the user to resolve the issue, which is contacting support. The Q/A pair is relevant and coherent, so the quality is high."
     },
     {
       "question": "asdfghjkl",
@@ -323,9 +323,9 @@
       "intent": "off_topic",
       "quality_score": 0.0,
       "issues": [
-        "Question is gibberish and does not relate to the answer."
+        "Question is gibberish and does not form a valid FAQ entry."
       ],
-      "reasoning": "The question 'asdfghjkl' is nonsensical and does not correspond to the answer about contacting support for security issues. Therefore, the FAQ entry is off-topic and of very low quality."
+      "reasoning": "The question 'asdfghjkl' is gibberish and does not represent a legitimate user query. Although the answer is about contacting support for security issues, the question does not match any meaningful intent and is off-topic."
     },
     {
       "question": "How do I update my recovery phone number?",
@@ -333,7 +333,7 @@
       "intent": "settings",
       "quality_score": 0.9,
       "issues": [],
-      "reasoning": "The question asks about updating the recovery phone number, which is a user-facing configuration related to account recovery options. The answer provides clear steps to update the phone number in the security settings. This fits best under 'settings' as it involves user configuration of recovery contact details."
+      "reasoning": "The question asks about updating the recovery phone number, which is a user-facing configuration related to account recovery options. This fits best under 'settings' as it involves updating user preferences or recovery contact details. The answer is clear and directly addresses the question, providing a straightforward method to update the phone number."
     },
     {
       "question": "How do I change my password?",
@@ -341,7 +341,7 @@
       "intent": "security",
       "quality_score": 1.0,
       "issues": [],
-      "reasoning": "The question asks about changing a password, which is related to authentication and safety workflows, fitting the 'security' intent. The answer provides clear and relevant instructions on how to change the password, matching the question perfectly."
+      "reasoning": "The question asks about changing a password, which is related to authentication and safety workflows, fitting the 'security' intent. The answer directly addresses the question with clear steps, making the FAQ entry high quality."
     }
   ]
 }

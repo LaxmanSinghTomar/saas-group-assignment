@@ -12,10 +12,10 @@ Customer support receives repetitive questions, but users rarely phrase queries 
 
 ### Data Quality Observations
 
-Analyzing the 40-entry FAQ dataset revealed:
+Analyzing the 42-entry FAQ dataset revealed:
 - **Malformed entries**: Empty questions, gibberish ("asdfghjkl")
 - **Off-topic noise**: Pizza toppings, greeting fragments ("Hi")
-- **Duplicates**: 3 username change variations, 2 account deletion variants
+- **Duplicates**: 2 username change variations, 2 account deletion variants
 - **Mismatched pairs**: Questions that don't align with their answers
 
 ### Key Assumptions
@@ -684,7 +684,7 @@ bad: 0
 ### Current Limitations
 
 1. **No conversation memory** — Each query treated independently; can't handle "What about billing?" as follow-up
-2. **Exact match caching only** — Cache doesn't recognize paraphrases (future: semantic similarity via `gptcache`)
+2. **Exact match caching only** — Cache doesn't recognize paraphrases (future: semantic similarity via `gptcache`). More critically, cache stores all responses including incorrect/stale ones; requires manual clearing via `/cache/clear` after FAQ updates, prompt changes, or model updates
 3. **English-only** — No multilingual support
 4. **Manual FAQ updates** — Requires restart to reload index
 5. **Single-instance only** — No horizontal scaling support yet (cache not shared across instances)
